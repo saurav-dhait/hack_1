@@ -1,0 +1,152 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website | Codehal</title>
+    <link rel="stylesheet" >
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 2em;
+    color: #cdcce2;
+    pointer-events: none;
+    margin-right: 270px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin:0 10px;
+    font-weight: 600;
+    }
+
+.navigation a:hover,
+.navigation a.active {
+    background:#0f1133;
+    color: #fff;
+}
+
+.temp {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2) ;
+}
+
+.temp img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec {
+    position: relative;
+    background:rgb(24,12,36);
+    padding: 100px;
+}
+.sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.sec p{
+    font-weight: 1em ;
+    color: #fff;
+    font-size: 300;
+}
+
+
+@media (min-width: 200px) {
+.container {
+ max-width: 2000px;
+
+}
+}
+
+</style>
+</head>
+
+<body>
+    <div class ="container">
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+
+    {% block content %}
+
+
+    {% endblock %}
+
+</div>
+
+
+    <script >
+let text = document.getElementById('text');
+let leaf = document.getElementById('leaf');
+let hill1 = document.getElementById('hill1');
+let hill4 = document.getElementById('hill4');
+let hill5 = document.getElementById('hill5');
+
+window.addEventListener('scroll',()=>{
+    let value = window.scrollY;
+
+    text.style.marginTop = value * 2.5 + 'px';
+    leaf.style.top = value * -1.5 + 'px';
+    leaf.style.left = value * 1.5 + 'px';
+    hill5.style.left = value * 1.5 + 'px';
+    hill4.style.left = value *-1.5 + 'px';
+    hill1.style.top = value * 1 + 'px';
+});
+
+
+
+
+    </script>
+</body>
+
+</html>
