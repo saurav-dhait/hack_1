@@ -1,149 +1,160 @@
 {% load static %}
-<html lang="en">
+<!--<html lang="en">-->
 
-<head>
-    <link rel="stylesheet" >
-<!--<style>-->
-<!--    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');-->
+<!--<head>-->
+<!--    <link rel="stylesheet" >-->
+<!--&lt;!&ndash;<style>&ndash;&gt;-->
+<!--&lt;!&ndash;    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');&ndash;&gt;-->
 
-<!--* {-->
-<!--    margin: 0;-->
-<!--    padding: 0;-->
-<!--    box-sizing: border-box;-->
-<!--    font-family: 'Poppins', sans-serif;-->
-<!--}-->
-<!--body{-->
-<!--    background-color: white;-->
-<!--    min-height: 100vh;-->
-<!--    overflow-x: hidden;-->
-<!--}-->
-<!--header{-->
-<!--    position: absolute;-->
-<!--    top: 0;-->
-<!--    left: 0;-->
-<!--    width: 100%;-->
-<!--    padding: 30px 100px;-->
-<!--    display: flex;-->
-<!--    justify-content: flex-start;-->
-<!--    align-items: center;-->
-<!--    z-index: 100;-->
-<!--}-->
-<!--.logo{-->
-<!--    font-size: 2em;-->
-<!--    color: #cdcce2;-->
-<!--    pointer-events: none;-->
-<!--    margin-right: 270px;-->
-<!--}-->
+<!--&lt;!&ndash;* {&ndash;&gt;-->
+<!--&lt;!&ndash;    margin: 0;&ndash;&gt;-->
+<!--&lt;!&ndash;    padding: 0;&ndash;&gt;-->
+<!--&lt;!&ndash;    box-sizing: border-box;&ndash;&gt;-->
+<!--&lt;!&ndash;    font-family: 'Poppins', sans-serif;&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;body{&ndash;&gt;-->
+<!--&lt;!&ndash;    background-color: white;&ndash;&gt;-->
+<!--&lt;!&ndash;    min-height: 100vh;&ndash;&gt;-->
+<!--&lt;!&ndash;    overflow-x: hidden;&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;header{&ndash;&gt;-->
+<!--&lt;!&ndash;    position: absolute;&ndash;&gt;-->
+<!--&lt;!&ndash;    top: 0;&ndash;&gt;-->
+<!--&lt;!&ndash;    left: 0;&ndash;&gt;-->
+<!--&lt;!&ndash;    width: 100%;&ndash;&gt;-->
+<!--&lt;!&ndash;    padding: 30px 100px;&ndash;&gt;-->
+<!--&lt;!&ndash;    display: flex;&ndash;&gt;-->
+<!--&lt;!&ndash;    justify-content: flex-start;&ndash;&gt;-->
+<!--&lt;!&ndash;    align-items: center;&ndash;&gt;-->
+<!--&lt;!&ndash;    z-index: 100;&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;.logo{&ndash;&gt;-->
+<!--&lt;!&ndash;    font-size: 2em;&ndash;&gt;-->
+<!--&lt;!&ndash;    color: #cdcce2;&ndash;&gt;-->
+<!--&lt;!&ndash;    pointer-events: none;&ndash;&gt;-->
+<!--&lt;!&ndash;    margin-right: 270px;&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
 
-<!--.navigation a {-->
-<!--    text-decoration: none;-->
-<!--    color: #ffffff;-->
-<!--    padding: 6px 15px;-->
-<!--    border-radius: 20px;-->
-<!--    margin:0 10px;-->
-<!--    font-weight: 600;-->
-<!--    }-->
+<!--&lt;!&ndash;.navigation a {&ndash;&gt;-->
+<!--&lt;!&ndash;    text-decoration: none;&ndash;&gt;-->
+<!--&lt;!&ndash;    color: #ffffff;&ndash;&gt;-->
+<!--&lt;!&ndash;    padding: 6px 15px;&ndash;&gt;-->
+<!--&lt;!&ndash;    border-radius: 20px;&ndash;&gt;-->
+<!--&lt;!&ndash;    margin:0 10px;&ndash;&gt;-->
+<!--&lt;!&ndash;    font-weight: 600;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
 
-<!--.navigation a:hover,-->
-<!--.navigation a.active {-->
-<!--    background:#0f1133;-->
-<!--    color: #fff;-->
-<!--}-->
+<!--&lt;!&ndash;.navigation a:hover,&ndash;&gt;-->
+<!--&lt;!&ndash;.navigation a.active {&ndash;&gt;-->
+<!--&lt;!&ndash;    background:#0f1133;&ndash;&gt;-->
+<!--&lt;!&ndash;    color: #fff;&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
 
-<!--.temp {-->
-<!--    position: relative;-->
-<!--    display: flex;-->
-<!--    justify-content: center;-->
-<!--    align-items: center;-->
-<!--    height: 100vh;-->
-<!--}-->
-<!--#text{-->
-<!--    position: absolute;-->
-<!--    font-size: 5em;-->
-<!--    color: #fff;-->
-<!--    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2) ;-->
-<!--}-->
+<!--&lt;!&ndash;.temp {&ndash;&gt;-->
+<!--&lt;!&ndash;    position: relative;&ndash;&gt;-->
+<!--&lt;!&ndash;    display: flex;&ndash;&gt;-->
+<!--&lt;!&ndash;    justify-content: center;&ndash;&gt;-->
+<!--&lt;!&ndash;    align-items: center;&ndash;&gt;-->
+<!--&lt;!&ndash;    height: 100vh;&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;#text{&ndash;&gt;-->
+<!--&lt;!&ndash;    position: absolute;&ndash;&gt;-->
+<!--&lt;!&ndash;    font-size: 5em;&ndash;&gt;-->
+<!--&lt;!&ndash;    color: #fff;&ndash;&gt;-->
+<!--&lt;!&ndash;    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2) ;&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
 
-<!--.temp img{-->
-<!--    position: absolute;-->
-<!--    top: 0;-->
-<!--    left: 0;-->
-<!--    width: 100%;-->
-<!--    pointer-events: none;-->
-<!--}-->
+<!--&lt;!&ndash;.temp img{&ndash;&gt;-->
+<!--&lt;!&ndash;    position: absolute;&ndash;&gt;-->
+<!--&lt;!&ndash;    top: 0;&ndash;&gt;-->
+<!--&lt;!&ndash;    left: 0;&ndash;&gt;-->
+<!--&lt;!&ndash;    width: 100%;&ndash;&gt;-->
+<!--&lt;!&ndash;    pointer-events: none;&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
 
-<!--.sec {-->
-<!--    position: relative;-->
-<!--    background:rgb(24,12,36);-->
-<!--    padding: 100px;-->
-<!--}-->
-<!--.sec h2 {-->
-<!--    font-size: 3em;-->
-<!--    color: #fff;-->
-<!--    margin-bottom: 10px;-->
-<!--}-->
-<!--.sec p{-->
-<!--    font-weight: 1em ;-->
-<!--    color: #fff;-->
-<!--    font-size: 300;-->
-<!--}-->
+<!--&lt;!&ndash;.sec {&ndash;&gt;-->
+<!--&lt;!&ndash;    position: relative;&ndash;&gt;-->
+<!--&lt;!&ndash;    background:rgb(24,12,36);&ndash;&gt;-->
+<!--&lt;!&ndash;    padding: 100px;&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;.sec h2 {&ndash;&gt;-->
+<!--&lt;!&ndash;    font-size: 3em;&ndash;&gt;-->
+<!--&lt;!&ndash;    color: #fff;&ndash;&gt;-->
+<!--&lt;!&ndash;    margin-bottom: 10px;&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;.sec p{&ndash;&gt;-->
+<!--&lt;!&ndash;    font-weight: 1em ;&ndash;&gt;-->
+<!--&lt;!&ndash;    color: #fff;&ndash;&gt;-->
+<!--&lt;!&ndash;    font-size: 300;&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
 
 
-<!--@media (min-width: 200px) {-->
-<!--.container {-->
-<!-- max-width: 2000px;-->
+<!--&lt;!&ndash;@media (min-width: 200px) {&ndash;&gt;-->
+<!--&lt;!&ndash;.container {&ndash;&gt;-->
+<!--&lt;!&ndash; max-width: 2000px;&ndash;&gt;-->
 
-<!--}-->
-<!--}-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
 
-<!--</style>-->
-</head>
+<!--&lt;!&ndash;</style>&ndash;&gt;-->
+<!--</head>-->
 
+<!--<body>-->
+<!--    <div class ="container">-->
+<!--    <header>-->
+<!--        <h2 class="logo">Logo</h2>-->
+<!--        <nav class="navigation">-->
+<!--            <a href="#">Home</a>-->
+<!--            <a href="#">About</a>-->
+<!--            <a href="#">Services</a>-->
+<!--            <a href="#">Contact</a>-->
+<!--        </nav>-->
+<!--    </header>-->
+
+
+
+
+
+
+<!--</div>-->
+
+
+
+<!--</body>-->
+
+<!--    <script >-->
+<!--let text = document.getElementById('text');-->
+<!--let leaf = document.getElementById('leaf');-->
+<!--let hill1 = document.getElementById('hill1');-->
+<!--let hill4 = document.getElementById('hill4');-->
+<!--let hill5 = document.getElementById('hill5');-->
+
+<!--window.addEventListener('scroll',()=>{-->
+<!--    let value = window.scrollY;-->
+
+<!--    text.style.marginTop = value * 2.5 + 'px';-->
+<!--    leaf.style.top = value * -1.5 + 'px';-->
+<!--    leaf.style.left = value * 1.5 + 'px';-->
+<!--    hill5.style.left = value * 1.5 + 'px';-->
+<!--    hill4.style.left = value *-1.5 + 'px';-->
+<!--    hill1.style.top = value * 1 + 'px';-->
+<!--});-->
+
+
+
+
+<!--    </script>-->
+
+<!--</html>-->
+<!DOCTYPE html>
+<html>
 <body>
-    <div class ="container">
-    <header>
-        <h2 class="logo">Logo</h2>
-        <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
 
+<h1>My First Heading</h1>
+{% block content %}
 
-    {% block content %}
-
-
-    {% endblock %}
-
-</div>
-
-
+{% endblock %}
+<p>My first paragraph.</p>
 
 </body>
-
-    <script >
-let text = document.getElementById('text');
-let leaf = document.getElementById('leaf');
-let hill1 = document.getElementById('hill1');
-let hill4 = document.getElementById('hill4');
-let hill5 = document.getElementById('hill5');
-
-window.addEventListener('scroll',()=>{
-    let value = window.scrollY;
-
-    text.style.marginTop = value * 2.5 + 'px';
-    leaf.style.top = value * -1.5 + 'px';
-    leaf.style.left = value * 1.5 + 'px';
-    hill5.style.left = value * 1.5 + 'px';
-    hill4.style.left = value *-1.5 + 'px';
-    hill1.style.top = value * 1 + 'px';
-});
-
-
-
-
-    </script>
-
 </html>
